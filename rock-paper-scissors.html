@@ -22,9 +22,14 @@
             playGame('scissors');
         ">Scissors</button>
 
+        <!-- using DOM to record 'result' in HTML as an Object through class -->
+        <p class="js-result"></p>
+
+        <!-- using DOM to record 'moves' in HTML as an Object through class -->
+        <p class="js-moves"></p>
+
         <!-- using DOM to record 'score' in HTML as an Object through class -->
         <p class="js-score"></p>
-
 
         <button onclick="
         score.wins = 0;
@@ -45,11 +50,6 @@
 
             /* using DOM to record 'score' in HTML as an Object */
             updateScoreElement();
-
-            function updateScoreElement() {
-                document.querySelector('.js-score')
-                    .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`
-            }
 
             function pickComputerMove () {
                 const randomNumber = Math.random();
@@ -113,9 +113,16 @@
 
                 updateScoreElement();
 
-                alert(`You picked ${playerMove}. Computer picked ${computerMove}. ${result}
-Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`);
-                                
+                document.querySelector('.js-result')
+                    .innerHTML = result;
+
+                document.querySelector('.js-moves')
+                    .innerHTML = `YOU ${playerMove} X ${computerMove} PC`;
+            }
+
+            function updateScoreElement() {
+                document.querySelector('.js-score')
+                    .innerHTML = `Wins: ${score.wins}, Losses: ${score.losses}, Ties: ${score.ties}`
             }
         </script>
     </body>
