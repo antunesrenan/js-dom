@@ -1,0 +1,55 @@
+body {
+    font-family: Arial;
+    margin: 30px;
+}
+
+.subscribe-button {
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.is-subscribed {
+    background-color: lightgrey;
+    color: black;
+}
+
+.title-calculator {
+    margin-top: 30px;
+}
+
+.cost-input {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.calculate-button {
+    background-color: greenyellow;
+    color: darkolivegreen;
+    border: none;
+    font-size: 15px;
+    font-weight: bolder;
+    padding: 12px 15px;
+    cursor: pointer;
+}
+
+.ship-comment {
+    font-size: 12px;
+    font-style: italic;
+}
+
+.js-rock-paper-scissors {
+    margin-top: 30px;
+}
+
+.signature {
+    font-size: 10px;
+    margin-top: 15px;
+    font-style: italic;
+}
